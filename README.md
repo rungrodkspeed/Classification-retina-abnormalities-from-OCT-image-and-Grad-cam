@@ -28,9 +28,11 @@
 
 
 - ผลลัพธ์จากการเทรน (Accuracy)
+<br />
 ![](/blob/accuracy.png)
 
 - ผลลัพธ์จากการเทรน (Loss)
+<br />
 ![](/blob/loss.png)
 
 ### Result
@@ -48,7 +50,7 @@ Grad-cam คือการ visualize สิ่งที่โมเดลเห
 
 โดยกำหนดภาพ input คือ
 
-![](/blob/input.jpeg)
+![](/blob/input.jpg)
 
 ภาพ heatmap ที่ได้ออกมา
 
