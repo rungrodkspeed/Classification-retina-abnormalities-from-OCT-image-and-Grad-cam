@@ -30,7 +30,7 @@
 
 <p align="center">
   <img src="/blob/densenet121.png" />
-  > ภาพจาก https://pytorch.org/hub/pytorch_vision_densenet/
+  ภาพจาก https://pytorch.org/hub/pytorch_vision_densenet/
 </p>
 
 <br />
