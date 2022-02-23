@@ -12,7 +12,7 @@
 
 ### Preprocessing Data
 -------------
-- ใช้ Z-scores Normalization ในการ nomalize ภาพแต่ไฟล์
+- ใช้ Z-scores Normalization ในการ nomalize ภาพแต่ละไฟล์
 - ใช้ Data Augumentation เพื่อให้ตัวโมเดล robust ต่อ noise ต่างๆ โดยใช้หลักการ flip, shift, rotate และการ zoom 
 
 และเมื่อเราทำการประมวลผลเสร็จแล้วจะได้รูปร่างหน้าตาของข้อมูลดังภาพ
@@ -21,3 +21,39 @@
 
 ### Model
 -------------
+ในส่วนการสร้างโมเดลเพื่อให้เครื่องคอมรู้จำได้นั้น เราจะใช้ Convolution neural network แบบ densenet121 
+
+![](densenet121.png)
+> ภาพจาก https://pytorch.org/hub/pytorch_vision_densenet/
+
+
+- ผลลัพธ์จากการเทรน (Accuracy)
+![](accuracy.png)
+
+- ผลลัพธ์จากการเทรน (Loss)
+![](loss.png)
+
+### Result
+-------------
+เมื่อนำโมเดลดังกล่าวไปทดสอบแล้วจะได้ผลลัพธ์ดังนี้
+
+![](cm.png)
+
+### Grad-cam
+-------------
+
+Grad-cam คือการ visualize สิ่งที่โมเดลเห็นจาก features ที่มีลักษณะสำคัญในการ classification ของโมเดลที่เราได้สร้างเอาไว้โดยใช้ heatmap 
+
+ซึ่งหลังจากเราเทรน model เสร็จแล้ว เราสามารย้อนหาบริเวณที่ต้องการได้จากการนำเอา output ในชั้นสุดท้ายที่เป็น feature map สองมิติในแต่ละ channel มาคูณเข้ากับค่า weight ก็จะได้ในส่วนของ heatmap ออกมา
+
+โดยกำหนดภาพ input คือ
+
+![](input.jpeg)
+
+ภาพ heatmap ที่ได้ออกมา
+
+![](heatmap.png)
+
+หลังจากที่ได้ heatmap ออกมาแล้ว เราจะนำภาพ input + heatmap ก็จะได้บริเวณที่คาดว่าเป็นสาเหตุของโรคนั้นๆ ดังภาพ
+
+![](im_out.jpg)
