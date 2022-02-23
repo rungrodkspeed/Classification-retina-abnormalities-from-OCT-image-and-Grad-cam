@@ -28,10 +28,14 @@
 
 <br />
 - ผลลัพธ์จากการเทรน (Accuracy)
+
+
 ![](/blob/accuracy.png)
 
 <br />
 - ผลลัพธ์จากการเทรน (Loss)
+
+
 ![](/blob/loss.png)
 
 ### Result
