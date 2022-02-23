@@ -8,7 +8,7 @@
 โดยชุดข้อมูลที่เรานำมาใช้สร้างเครืองมือชื่อว่า Labeled Optical Coherence Tomography (OCT) and Chest X-Ray Images for Classification , version 2, เผยแพร่วันที่ 6 มกราคม 2018 (ปัจจุบันมี version 3 แล้ว) จาก https://data.mendeley.com/datasets/rscbjbr9sj/2
 ซึ่งเราจะใช้ชุดข้อมูลที่เป็นภาพ OCT เท่านั้น โดยภายในชุดข้อมูลจะประกอบไปด้วย 3 folders คือ train, test และ val แล้วในแต่ละ folder นั้นจะมีไฟล์ภาพ OCT ที่มีลักษณะที่บ่งบอกถึงโรคต่างๆ คือ CNV(Choroidal neovasclarization), DME(Diabetic macular edema), Drusen และ Normal ดังภาพ
 
-![](data.png)
+![](/blob/data.png)
 
 ### Preprocessing Data
 -------------
@@ -17,27 +17,27 @@
 
 และเมื่อเราทำการประมวลผลเสร็จแล้วจะได้รูปร่างหน้าตาของข้อมูลดังภาพ
 
-![](preprocessing.png)
+![](/blob/preprocessing.png)
 
 ### Model
 -------------
 ในส่วนการสร้างโมเดลเพื่อให้เครื่องคอมรู้จำได้นั้น เราจะใช้ Convolution neural network แบบ densenet121 
 
-![](densenet121.png)
+![](/blob/densenet121.png)
 > ภาพจาก https://pytorch.org/hub/pytorch_vision_densenet/
 
 
 - ผลลัพธ์จากการเทรน (Accuracy)
-![](accuracy.png)
+![](/blob/accuracy.png)
 
 - ผลลัพธ์จากการเทรน (Loss)
-![](loss.png)
+![](/blob/loss.png)
 
 ### Result
 -------------
 เมื่อนำโมเดลดังกล่าวไปทดสอบแล้วจะได้ผลลัพธ์ดังนี้
 
-![](cm.png)
+![](/blob/cm.png)
 
 ### Grad-cam
 -------------
@@ -48,12 +48,12 @@ Grad-cam คือการ visualize สิ่งที่โมเดลเห
 
 โดยกำหนดภาพ input คือ
 
-![](input.jpeg)
+![](/blob/input.jpeg)
 
 ภาพ heatmap ที่ได้ออกมา
 
-![](heatmap.png)
+![](/blob/heatmap.png)
 
 หลังจากที่ได้ heatmap ออกมาแล้ว เราจะนำภาพ input + heatmap ก็จะได้บริเวณที่คาดว่าเป็นสาเหตุของโรคนั้นๆ ดังภาพ
 
-![](im_out.jpg)
+![](/blob/im_out.jpg)
