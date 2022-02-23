@@ -30,8 +30,8 @@
 
 <p align="center">
   <img src="/blob/densenet121.png" />
+  > ภาพจาก https://pytorch.org/hub/pytorch_vision_densenet/
 </p>
-> ภาพจาก https://pytorch.org/hub/pytorch_vision_densenet/
 
 <br />
 - ผลลัพธ์จากการเทรน (Accuracy)
