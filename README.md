@@ -5,6 +5,6 @@
 ### Data
 -------------
 โดยชุดข้อมูลที่เรานำมาใช้สร้างเครืองมือชื่อว่า Labeled Optical Coherence Tomography (OCT) and Chest X-Ray Images for Classification , version 2, เผยแพร่วันที่ 6 มกราคม 2018 (ปัจจุบันมี version 3 แล้ว) จาก https://data.mendeley.com/datasets/rscbjbr9sj/2
-ซึ่งเราจะใช้ชุดข้อมูลที่เป็น OCT เท่านั้น โดยภายในชุดข้อมูลจะประกอบไปด้วย 3 folders คือ train, test และ val แล้วในแต่ละ folder นั้นจะมีไฟล์ภาพ OCT ที่มีลักษณะที่บ่งบอกถึงโรคต่างๆ คือ CNV(Choroidal neovasclarization), DME(Diabetic macular edema), Drusen และ Normal ดังภาพ
+ซึ่งเราจะใช้ชุดข้อมูลที่เป็นภาพ OCT เท่านั้น โดยภายในชุดข้อมูลจะประกอบไปด้วย 3 folders คือ train, test และ val แล้วในแต่ละ folder นั้นจะมีไฟล์ภาพ OCT ที่มีลักษณะที่บ่งบอกถึงโรคต่างๆ คือ CNV(Choroidal neovasclarization), DME(Diabetic macular edema), Drusen และ Normal ดังภาพ
 
 ![](data.png)
