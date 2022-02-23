@@ -26,13 +26,12 @@
 ![](/blob/densenet121.png)
 > ภาพจาก https://pytorch.org/hub/pytorch_vision_densenet/
 
-
-- ผลลัพธ์จากการเทรน (Accuracy)
 <br />
+- ผลลัพธ์จากการเทรน (Accuracy)
 ![](/blob/accuracy.png)
 
-- ผลลัพธ์จากการเทรน (Loss)
 <br />
+- ผลลัพธ์จากการเทรน (Loss)
 ![](/blob/loss.png)
 
 ### Result
@@ -50,7 +49,7 @@ Grad-cam คือการ visualize สิ่งที่โมเดลเห
 
 โดยกำหนดภาพ input คือ
 
-![](/blob/input.jpg)
+![](/blob/input.jfif)
 
 ภาพ heatmap ที่ได้ออกมา
 
